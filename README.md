@@ -34,50 +34,50 @@ Haces el siguiente comando para saber tu ip (en mi caso esta 10.0.9.117):
 ```
 ip a
 ```
-Salida:
-```bash
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-    inet6 ::1/128 scope host 
-       valid_lft forever preferred_lft forever
-2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    link/ether 08:00:27:f7:4c:26 brd ff:ff:ff:ff:ff:ff
-    inet 10.0.9.117/24 brd 10.0.9.255 scope global dynamic noprefixroute enp0s3
-       valid_lft 82382sec preferred_lft 82382sec
-    inet6 fe80::1dc6:8ee4:e29c:80e8/64 scope link dadfailed tentative noprefixroute 
-       valid_lft forever preferred_lft forever
-    inet6 fe80::6e28:6de9:d49b:a7f3/64 scope link noprefixroute 
-       valid_lft forever preferred_lft forever
-3: br-c63a9802aae3: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
-    link/ether 02:42:9f:7b:39:6f brd ff:ff:ff:ff:ff:ff
-    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c63a9802aae3
-       valid_lft forever preferred_lft forever
-4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
-    link/ether 02:42:43:82:0b:cf brd ff:ff:ff:ff:ff:ff
-    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
-       valid_lft forever preferred_lft forever
-5: br-809080e22097: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
-    link/ether 02:42:53:25:63:57 brd ff:ff:ff:ff:ff:ff
-    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-809080e22097
-       valid_lft forever preferred_lft forever
-    inet6 fe80::42:53ff:fe25:6357/64 scope link 
-       valid_lft forever preferred_lft forever
-13: veth53fd111@if12: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-809080e22097 state UP group default 
-    link/ether f6:80:0c:a1:12:a9 brd ff:ff:ff:ff:ff:ff link-netnsid 0
-    inet6 fe80::f480:cff:fea1:12a9/64 scope link 
-       valid_lft forever preferred_lft forever
-15: veth8015b43@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-809080e22097 state UP group default 
-    link/ether de:5e:73:cf:9a:04 brd ff:ff:ff:ff:ff:ff link-netnsid 1
-    inet6 fe80::dc5e:73ff:fecf:9a04/64 scope link 
-       valid_lft forever preferred_lft forever
-17: vethdff67be@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-809080e22097 state UP group default 
-    link/ether 3a:9d:ff:c9:5f:80 brd ff:ff:ff:ff:ff:ff link-netnsid 2
-    inet6 fe80::389d:ffff:fec9:5f80/64 scope link 
-       valid_lft forever preferred_lft forever
-```
-
+ <details>
+     <summary>Salida:</summary>
+   
+                  1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+                      link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+                        inet 127.0.0.1/8 scope host lo
+                         valid_lft forever preferred_lft forever
+                          inet6 ::1/128 scope host 
+                         valid_lft forever preferred_lft forever
+                  2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+                    link/ether 08:00:27:f7:4c:26 brd ff:ff:ff:ff:ff:ff
+                    inet 10.0.9.117/24 brd 10.0.9.255 scope global dynamic noprefixroute enp0s3
+                       valid_lft 82382sec preferred_lft 82382sec
+                    inet6 fe80::1dc6:8ee4:e29c:80e8/64 scope link dadfailed tentative noprefixroute 
+                       valid_lft forever preferred_lft forever
+                    inet6 fe80::6e28:6de9:d49b:a7f3/64 scope link noprefixroute 
+                       valid_lft forever preferred_lft forever
+                3: br-c63a9802aae3: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+                    link/ether 02:42:9f:7b:39:6f brd ff:ff:ff:ff:ff:ff
+                    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-c63a9802aae3
+                       valid_lft forever preferred_lft forever
+                4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+                    link/ether 02:42:43:82:0b:cf brd ff:ff:ff:ff:ff:ff
+                    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+                       valid_lft forever preferred_lft forever
+                5: br-809080e22097: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+                    link/ether 02:42:53:25:63:57 brd ff:ff:ff:ff:ff:ff
+                    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-809080e22097
+                       valid_lft forever preferred_lft forever
+                    inet6 fe80::42:53ff:fe25:6357/64 scope link 
+                       valid_lft forever preferred_lft forever
+                13: veth53fd111@if12: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-809080e22097 state UP group default 
+                    link/ether f6:80:0c:a1:12:a9 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+                    inet6 fe80::f480:cff:fea1:12a9/64 scope link 
+                       valid_lft forever preferred_lft forever
+                15: veth8015b43@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-809080e22097 state UP group default 
+                    link/ether de:5e:73:cf:9a:04 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+                    inet6 fe80::dc5e:73ff:fecf:9a04/64 scope link 
+                       valid_lft forever preferred_lft forever
+                17: vethdff67be@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-809080e22097 state UP group default 
+                    link/ether 3a:9d:ff:c9:5f:80 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+                    inet6 fe80::389d:ffff:fec9:5f80/64 scope link 
+                       valid_lft forever preferred_lft forever
+</details>
 Vas a tu navegador y pones lo siguientes:
 ```bash
 10.0.9.117:8069
@@ -115,16 +115,31 @@ Entras en la siguiente dirección(recuerda que yo estoy poniendo mi ip):
 10.0.9.117:8080
 ```
 Salida:
+
+
 ![pgadmin_registro](Imagenes/pgadmin_registro.png)
+
+
 Te registras con la informacion puesta en el docker compose.
 
 Te deberia salir esto:
+
+
 ![pgadmin](Imagenes/pgadmin.png)
 
+
 Vas a la pestaña de donde pone servers le das clic derecho, seleccionas register y servidor.
+
+
 ![pgadmin_nombre](Imagenes/pgadmin_nombre.png)
+
+
 Le pones el nombre que quieras y te vas a la pestaña de conexión.
+
+
 ![conexion_pgadmin](Imagenes/conexion_pgadmin.png)
+
+
 Aqui tienes que poner el puerto 5432 y para conseguir la ip tienes que seguir los siguientes pasos:
   - Ver el nombre del contenedor de postgres con el siguiente comando:
     ```bash
@@ -144,7 +159,6 @@ Aqui tienes que poner el puerto 5432 y para conseguir la ip tienes que seguir lo
      <details>
      <summary>Salida:</summary>
 
-        ```bash
            [
         {
         "Id": "273e8a723097198a9bfc438811212335b16b86053bb10ac7cc2fc34d1ff06497",
@@ -390,13 +404,18 @@ Aqui tienes que poner el puerto 5432 y para conseguir la ip tienes que seguir lo
             }
          }
         ]
-    ```
 </details>
 
 
 Y de aquí sacas la IPAddress que en mi caso es 172.19.0.2, lo colocas en direccion de servidor y le das a salvar.
+
+
 ![Tablas](Imagenes/tablas_114.png)
+
+
 Y ya estaria instalado.
+
+
     
      
 
