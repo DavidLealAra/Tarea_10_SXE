@@ -28,7 +28,7 @@ Para instalar Odoo mediante Docker Compose se precisa de la siguiente imagen:
   ```
 Iniciar el docker compose:
 ```bash
-sudo docker compose up 
+sudo docker compose up -d
 ```
 Haces el siguiente comando para saber tu ip (en mi caso esta 10.0.9.117):
 ```
@@ -84,9 +84,16 @@ Vas a tu navegador y pones lo siguientes:
 ```
 Salida:
 ![odoo_db](Imagenes/odoo_db.png)
-Rellenas con tu informacion y le das a create database.
+Rellenas con tu informacion y le das a create database (Si te da algun error puede ser que la contraseña maestra es poco segura recomienda usar la que te pone al iniciar.).
 
 
+Te deberia aparecer esta pestaña:
+![inicio_sesion](Imagenes/inicio_sesion.png)
+Inicias sesion con los datos anteriores.
+
+
+Y ya tendrias acceso a Odoo:
+![odoo](Imagenes/odoo.png)
 
 
 
