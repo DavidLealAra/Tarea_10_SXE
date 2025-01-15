@@ -84,7 +84,7 @@ Vas a tu navegador y pones lo siguientes:
 ```
 Salida:
 ![odoo_db](Imagenes/odoo_db.png)
-Rellenas con tu informacion y le das a create database (Si te da algun error puede ser que la contraseña maestra es poco segura recomienda usar la que te pone al iniciar.).
+Rellenas con tu información y le das a create database (Si te da algún error puede ser que la contraseña maestra es poco segura, recomienda usar la que te pone al iniciar.).
 
 
 Te deberia aparecer esta pestaña:
@@ -120,9 +120,10 @@ Salida:
 ![pgadmin_registro](Imagenes/pgadmin_registro.png)
 
 
-Te registras con la informacion puesta en el docker compose.
+Te registras con la información puesta en el docker compose.
 
-Te deberia salir esto:
+
+Te debería salir esto:
 
 
 ![pgadmin](Imagenes/pgadmin.png)
@@ -140,7 +141,7 @@ Le pones el nombre que quieras y te vas a la pestaña de conexión.
 ![conexion_pgadmin](Imagenes/conexion_pgadmin.png)
 
 
-Aqui tienes que poner el puerto 5432 y para conseguir la ip tienes que seguir los siguientes pasos:
+Aquí tienes que poner el puerto 5432 y para conseguir la ip tienes que seguir los siguientes pasos:
   - Ver el nombre del contenedor de postgres con el siguiente comando:
     ```bash
     sudo docker ps -a
@@ -407,13 +408,22 @@ Aqui tienes que poner el puerto 5432 y para conseguir la ip tienes que seguir lo
 </details>
 
 
-Y de aquí sacas la IPAddress que en mi caso es 172.19.0.2, lo colocas en direccion de servidor y le das a salvar.
+Y de aquí sacas la IPAddress que en mi caso es 172.19.0.2, lo colocas en dirección de servidor y le das a salvar.
 
 
 ![Tablas](Imagenes/tablas_114.png)
 
 
-Y ya estaria instalado.
+Y ya estaría instalado.
+
+
+## Preguntas: ¿Qué ocurre si en el ordenador local el puerto 5432 está ocupado? ¿Y si lo estuviese el 8069? ¿Cómo puedes solucionarlo?
+
+Si el puerto 5442 que es el de postgreSQL está ocupado ya por otro servicio no se podría acceder a la base de datos, la solución sería poner otro puerto en el docker compose.
+
+
+Y lo mismo para el caso del 8069, pero en este caso es el puerto utilizado en odoo entonces lo que deberías de cambiar es el puerto de odoo en el docker compose.
+
 
 
     
