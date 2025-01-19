@@ -83,7 +83,11 @@ Vas a tu navegador y pones lo siguientes:
 10.0.9.117:8069
 ```
 Salida:
+
+
 ![odoo_db](Imagenes/odoo_db.png)
+
+
 Rellenas con tu información y le das a create database (Si te da algún error puede ser que la contraseña maestra es poco segura, recomienda usar la que te pone al iniciar.).
 
 
