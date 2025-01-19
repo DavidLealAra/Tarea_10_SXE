@@ -79,6 +79,7 @@ ip a
                        valid_lft forever preferred_lft forever
 </details>
 Vas a tu navegador y pones lo siguientes:
+
 ```bash
 10.0.9.117:8069
 ```
